@@ -4,31 +4,38 @@ body{
 h1{
     color: goldenrod;
 }
+h1::after{
+    content: " hello";
+    background-color: aquamarine;
+    font-size: 20px;
+}
+
 h1:hover{
     color: indianred;
     background-color: black;
     font-size: 40px;
 }
 
-.P:hover{
+/*.P:hover{
     background-color: aliceblue;
     font-style: italic;
     font-size: 40px;
+}*/
+.p::after{
+    content: "Hello";
+    color: aquamarine;
+    font-size: 20px;
 }
+
 input:focus{
     font-size: 20px;
     color: blueviolet;
 }
-li:first-child{
-    background-color: rebeccapurple;
-}
-li:last-child{
-    background-color: red;
-}
-li:nth-child(2n){
-    background-color: aquamarine;
-}
 a:visited{
     color: blue;
-    background-color: red;
+}
+
+.pp::before{
+    content: "💚 ";
+
 }
